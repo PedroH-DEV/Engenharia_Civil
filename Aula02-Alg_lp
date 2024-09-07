@@ -1,0 +1,222 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNbqIwZzdBaHoAMQg6RukwY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PedroH-DEV/Engenharia_Civil/blob/main/Aula02-Alg_lp\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 02 | Início em código Pyton (Aprendizado)\n"
+      ],
+      "metadata": {
+        "id": "i52-IZTNiUCI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira uma medida em polegadas (EX.02)\n",
+        "polegadas = float(input(\"Digite a medida em polegadas: \"))\n",
+        "\n",
+        "# Converta a medida para milímetros (1 polegada = 25,4 mm)\n",
+        "milímetros = polegadas*25.4\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"{polegadas} polegadas é igual a {milímetros:.2f} milímetros.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sz8wXSa_ig1q",
+        "outputId": "2419cf10-2da4-453e-f7e5-8146831e28a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida em polegadas: 10\n",
+            "10.0 polegadas é igual a 254.00 milímetros.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira uma medida em polegadas (EX.03)\n",
+        "milímetros = float(input(\"Digite a medida em milímetros: \"))\n",
+        "\n",
+        "# Converta a medida para milímetros (1 polegada = 25,4 mm)\n",
+        "polegadas = milímetros/25.4\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"{milímetros} milímetros é igual a {polegadas:.2f} polegadas.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eqzb8Yp1lI5X",
+        "outputId": "02937519-3cda-4cc9-bb19-1531de1c42e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida em milímetros: 10\n",
+            "10.0 milímetros é igual a 0.39 polegadas.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira sua idade (EX.04)\n",
+        "idade = int(input(\"Digite a sua idade: \"))\n",
+        "\n",
+        "# Verifica se a idade é maior ou igual a 16 anos e menor que 70 anos\n",
+        "if 16 <= idade < 70:\n",
+        "    print(\"Você está na faixa etária entre 16 e 70 anos.\")\n",
+        "else:\n",
+        "    print(\"Você está fora da faixa etária entre 16 e 70 anos.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xuj4dTkKnQjy",
+        "outputId": "2e05a2c8-c944-4189-d0d6-f1a603df813b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a sua idade: 19\n",
+            "Você está na faixa etária entre 16 e 70 anos.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Exercícios para praticar"
+      ],
+      "metadata": {
+        "id": "RuP77lNpoVzD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calcular volume da esfera (EX.05)\n",
+        "# Solicita ao usuário que insira o Raio da esfera\n",
+        "Raio = float(input(\"Digite a medida do Raio: \"))\n",
+        "\n",
+        "# Calcular o volume da esfera\n",
+        "Volume = 3/4*3.14*Raio**3\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O volume da esfera é {Volume:.2f}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5BsIlQq8omi8",
+        "outputId": "9c71ef5c-0ca3-4738-ede3-28c54839b719"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida do Raio: 10\n",
+            "O volume da esfera é 2355.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Converter de Graus para Radianos part.01 (EX.06)\n",
+        "import math\n",
+        "\n",
+        "# Solicita ao usuário que insira o Raio da esfera\n",
+        "Raio = float(input(\"Digite o Raio da esfera em unidades de comprimento: \"))\n",
+        "\n",
+        "# Calcular o volume da esfera usando a fórmula V = (3/4) * 3.14 * Raio^3\n",
+        "Volume = 4-3*math.pi*(Raio**3)\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O volume da esfera com Raio {Raio} é {Volume:.2f} unidades cúbicas. \")\n",
+        "\n",
+        "\n",
+        "# Converter de Graus para Radianos part.02 (EX.06)\n",
+        "import math\n",
+        "\n",
+        "# Solicita ao usuário que insira o ângulo em Graus\n",
+        "Graus = float(input(\"Digite o ângulo em graus: \"))\n",
+        "\n",
+        "# Converte o Ângulo para Radianos usando a fórmula r = g * (pi / 180)\n",
+        "Radianos = Graus * (math.pi / 180)\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O Ângulo de {Graus} graus é igual a {Radianos:.4f} radianos.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6OsBLmj9rBe3",
+        "outputId": "d7b151aa-aa35-447f-c707-831ebc0c70b6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o Raio da esfera em unidades de comprimento: 10\n",
+            "O volume da esfera com Raio 10.0 é -9420.78 unidades cúbicas. \n",
+            "Digite o ângulo em graus: 10\n",
+            "O Ângulo de 10.0 graus é igual a 0.1745 radianos.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
