@@ -1,0 +1,642 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PedroH-DEV/Engenharia_Civil/blob/main/Aulas-alg_lp_PEDRO\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 02 | Início em código Pyton (Aprendizado) - PARTE 01\n"
+      ],
+      "metadata": {
+        "id": "i52-IZTNiUCI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira uma medida em polegadas (EX.02)\n",
+        "polegadas = float(input(\"Digite a medida em polegadas: \"))\n",
+        "\n",
+        "# Converta a medida para milímetros (1 polegada = 25,4 mm)\n",
+        "milímetros = polegadas*25.4\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"{polegadas} polegadas é igual a {milímetros:.2f} milímetros.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sz8wXSa_ig1q",
+        "outputId": "2419cf10-2da4-453e-f7e5-8146831e28a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida em polegadas: 10\n",
+            "10.0 polegadas é igual a 254.00 milímetros.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira uma medida em polegadas (EX.03)\n",
+        "milímetros = float(input(\"Digite a medida em milímetros: \"))\n",
+        "\n",
+        "# Converta a medida para milímetros (1 polegada = 25,4 mm)\n",
+        "polegadas = milímetros/25.4\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"{milímetros} milímetros é igual a {polegadas:.2f} polegadas.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eqzb8Yp1lI5X",
+        "outputId": "02937519-3cda-4cc9-bb19-1531de1c42e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida em milímetros: 10\n",
+            "10.0 milímetros é igual a 0.39 polegadas.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira sua idade (EX.04)\n",
+        "idade = int(input(\"Digite a sua idade: \"))\n",
+        "\n",
+        "# Verifica se a idade é maior ou igual a 16 anos e menor que 70 anos\n",
+        "if 16 <= idade < 70:\n",
+        "    print(\"Você está na faixa etária entre 16 e 70 anos.\")\n",
+        "else:\n",
+        "    print(\"Você está fora da faixa etária entre 16 e 70 anos.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xuj4dTkKnQjy",
+        "outputId": "2e05a2c8-c944-4189-d0d6-f1a603df813b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a sua idade: 19\n",
+            "Você está na faixa etária entre 16 e 70 anos.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Exercícios para praticar"
+      ],
+      "metadata": {
+        "id": "RuP77lNpoVzD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calcular volume da esfera (EX.05)\n",
+        "# Solicita ao usuário que insira o Raio da esfera\n",
+        "Raio = float(input(\"Digite a medida do Raio: \"))\n",
+        "\n",
+        "# Calcular o volume da esfera\n",
+        "Volume = 3/4*3.14*Raio**3\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O volume da esfera é {Volume:.2f}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5BsIlQq8omi8",
+        "outputId": "9c71ef5c-0ca3-4738-ede3-28c54839b719"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a medida do Raio: 10\n",
+            "O volume da esfera é 2355.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Converter de Graus para Radianos part.01 (EX.06)\n",
+        "import math\n",
+        "\n",
+        "# Solicita ao usuário que insira o Raio da esfera\n",
+        "Raio = float(input(\"Digite o Raio da esfera em unidades de comprimento: \"))\n",
+        "\n",
+        "# Calcular o volume da esfera usando a fórmula V = (3/4) * 3.14 * Raio^3\n",
+        "Volume = 4-3*math.pi*(Raio**3)\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O volume da esfera com Raio {Raio} é {Volume:.2f} unidades cúbicas. \")\n",
+        "\n",
+        "\n",
+        "# Converter de Graus para Radianos part.02 (EX.06)\n",
+        "import math\n",
+        "\n",
+        "# Solicita ao usuário que insira o ângulo em Graus\n",
+        "Graus = float(input(\"Digite o ângulo em graus: \"))\n",
+        "\n",
+        "# Converte o Ângulo para Radianos usando a fórmula r = g * (pi / 180)\n",
+        "Radianos = Graus * (math.pi / 180)\n",
+        "\n",
+        "# Exibe o resultado\n",
+        "print(f\"O Ângulo de {Graus} graus é igual a {Radianos:.4f} radianos.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6OsBLmj9rBe3",
+        "outputId": "d7b151aa-aa35-447f-c707-831ebc0c70b6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o Raio da esfera em unidades de comprimento: 10\n",
+            "O volume da esfera com Raio 10.0 é -9420.78 unidades cúbicas. \n",
+            "Digite o ângulo em graus: 10\n",
+            "O Ângulo de 10.0 graus é igual a 0.1745 radianos.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "#Aula 02 | Início em código Pyton (Aprendizado) - PARTE 02\n"
+      ],
+      "metadata": {
+        "id": "UYIX8UQSk3Vq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira um número (EX.03)\n",
+        "número = int(input(\"Digite um número inteiro: \"))\n",
+        "\n",
+        "# Verifica se o número é par ou ímpar\n",
+        "if número % 2 == 0:\n",
+        "    print(f\"O número {número} é um número par.\")\n",
+        "else:\n",
+        "    print(f\"O número {número} é um número ímpar.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SuEDHFfgk9Rn",
+        "outputId": "dcf1c13a-3b84-4b79-84d6-df239cee6abc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 5\n",
+            "O número 5 é um número ímpar.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "# Solicita ao usuário que insira um número (EX.04)\n",
+        "número = float(input(\"Digite um número: \"))\n",
+        "\n",
+        "# Verifica se o número é maior ou igual a zero\n",
+        "if número >= 0:\n",
+        "    raiz_quadrada = math.sqrt(número)\n",
+        "    print(f\"A raiz quadrada de {número} é {raiz_quadrada:.2f}\")\n",
+        "else:\n",
+        "    print(\"Não existe raiz real para este número!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5eGRgwyqmY9y",
+        "outputId": "18902b88-eaba-43c5-c75e-58b60fe94a57"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 4\n",
+            "A raiz quadrada de 4.0 é 2.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Solicita ao usuário que insira o comprimento e a largura da camiseta (EX.05)\n",
+        "comprimento = float(input(\"Digite o comprimento da camiseta em centímetros: \"))\n",
+        "largura = float(input(\"Digite a largura da camiseta em centímetros: \"))\n",
+        "\n",
+        "# Determina o tamanho da camiseta com base no comrimento e largura\n",
+        "if comprimento <= 60 and largura <= 45:\n",
+        "  tamanho = \"PP\"\n",
+        "elif comprimento <= 65 and largura <= 48:\n",
+        "  tamanho = \"P\"\n",
+        "elif comprimento <= 70 and largura <= 51:\n",
+        "    tamanho = \"M\"\n",
+        "elif comprimento <= 75 and largura <= 54:\n",
+        "    tamanho = \"G\"\n",
+        "elif comprimento <= 80 and largura <= 57:\n",
+        "    tamanho = \"GG\"\n",
+        "else:\n",
+        "    tamanho = \"XGG\"\n",
+        "\n",
+        "# Exibe o tamanho da camiseta\n",
+        "print(f\"O tamanho da camiseta é {tamanho}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "53CFEAZ_m_X0",
+        "outputId": "99b389b6-8e1d-4080-b637-cbf0f4070693"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o comprimento da camiseta em centímetros: 72\n",
+            "Digite a largura da camiseta em centímetros: 80\n",
+            "O tamanho da camiseta é XGG.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "# Cabeçalho da tabela (EX.06) **REVISAR\n",
+        "print(f\"{'Ângulo (graus)':<15} {'Seno':<10}\")\n",
+        "\n",
+        "# Gera os valores dos Ângulos de 0º a 360º com intervalos de 5º\n",
+        "for Ângulo in range(0, 361, 5):\n",
+        "  # Converte o Ângulo de graus para radianos\n",
+        "  radianos = math.radians(Ângulo)\n",
+        "\n",
+        "  # Calcula o seno do Ângulo\n",
+        "  Seno = math.sin(radianos)\n",
+        "\n",
+        "  # Exibe o Ângulo e seu seno correspondente\n",
+        "  print(f\"{Ângulo:<15} {Seno:<10.4f}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AVKwG2fPokAF",
+        "outputId": "c3e4684d-fc22-4956-9438-7ee0957d79ad"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ângulo (graus)  Seno      \n",
+            "0               0.0000    \n",
+            "5               0.0872    \n",
+            "10              0.1736    \n",
+            "15              0.2588    \n",
+            "20              0.3420    \n",
+            "25              0.4226    \n",
+            "30              0.5000    \n",
+            "35              0.5736    \n",
+            "40              0.6428    \n",
+            "45              0.7071    \n",
+            "50              0.7660    \n",
+            "55              0.8192    \n",
+            "60              0.8660    \n",
+            "65              0.9063    \n",
+            "70              0.9397    \n",
+            "75              0.9659    \n",
+            "80              0.9848    \n",
+            "85              0.9962    \n",
+            "90              1.0000    \n",
+            "95              0.9962    \n",
+            "100             0.9848    \n",
+            "105             0.9659    \n",
+            "110             0.9397    \n",
+            "115             0.9063    \n",
+            "120             0.8660    \n",
+            "125             0.8192    \n",
+            "130             0.7660    \n",
+            "135             0.7071    \n",
+            "140             0.6428    \n",
+            "145             0.5736    \n",
+            "150             0.5000    \n",
+            "155             0.4226    \n",
+            "160             0.3420    \n",
+            "165             0.2588    \n",
+            "170             0.1736    \n",
+            "175             0.0872    \n",
+            "180             0.0000    \n",
+            "185             -0.0872   \n",
+            "190             -0.1736   \n",
+            "195             -0.2588   \n",
+            "200             -0.3420   \n",
+            "205             -0.4226   \n",
+            "210             -0.5000   \n",
+            "215             -0.5736   \n",
+            "220             -0.6428   \n",
+            "225             -0.7071   \n",
+            "230             -0.7660   \n",
+            "235             -0.8192   \n",
+            "240             -0.8660   \n",
+            "245             -0.9063   \n",
+            "250             -0.9397   \n",
+            "255             -0.9659   \n",
+            "260             -0.9848   \n",
+            "265             -0.9962   \n",
+            "270             -1.0000   \n",
+            "275             -0.9962   \n",
+            "280             -0.9848   \n",
+            "285             -0.9659   \n",
+            "290             -0.9397   \n",
+            "295             -0.9063   \n",
+            "300             -0.8660   \n",
+            "305             -0.8192   \n",
+            "310             -0.7660   \n",
+            "315             -0.7071   \n",
+            "320             -0.6428   \n",
+            "325             -0.5736   \n",
+            "330             -0.5000   \n",
+            "335             -0.4226   \n",
+            "340             -0.3420   \n",
+            "345             -0.2588   \n",
+            "350             -0.1736   \n",
+            "355             -0.0872   \n",
+            "360             -0.0000   \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "# Solicita ao usuário que insira a quantidade de alunos (EX.07) **REVISAR\n",
+        "n = int(input(\"Digite a quantidade de alunos: \"))\n",
+        "\n",
+        "# Inicializa a variável para armazenar a soma das médias\n",
+        "soma_das_medidas = 0\n",
+        "\n",
+        "# Laço para calcular a média de cada aluno\n",
+        "for i in range(1, n + 1):\n",
+        "  print(f\"\\nAluno {i}:\")\n",
+        "  n1 = float(input(\"Digite a nota N1: \"))\n",
+        "  n2 = float(input(\"Digite a nota N2: \"))\n",
+        "\n",
+        "  # Calcula a média do aluno\n",
+        "  media = (n1 + n2) / 2\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sK9vgmmUqQs8",
+        "outputId": "be3d1126-f753-40fb-b787-b73cbd1f6d7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite a quantidade de alunos: 1\n",
+            "\n",
+            "Aluno 1:\n",
+            "Digite a nota N1: 5\n",
+            "Digite a nota N2: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 03 | Exercícios Extras"
+      ],
+      "metadata": {
+        "id": "Vn0t0-o-kf0C"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#(EX. 01)\n",
+        "#>Elaborar um programa em python que solicite ao usuário um valor inteiro e em seguida informe ao usuário se o valor é múltiplo de 3 ou não. A seguir o pseudocódigo referente ao algoritmo do programa:\n",
+        "##>>início\n",
+        "##>>inteiro: x, r\n",
+        "##>>Ler x\n",
+        "##>>r = resto da divisao de x por 3\n",
+        "##>>se (r==0) então:\n",
+        "##>>escrever \"Múltiplo\"\n",
+        "##>>senão:\n",
+        "##>>escrever \"Não múltiplo\"\n",
+        "##>>fim se\n",
+        "##>>fim\n",
+        "\n",
+        "# Solicita ao usuário que insira um valor inteiro\n",
+        "número = int(input(\"Digite um número inteiro: \"))\n",
+        "\n",
+        "# Verifica se o número é múltiplo de 3\n",
+        "if número % 3 == 0:\n",
+        "    print(f\"O número {número} é um múltiplo de 3.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5tzWKd5Sk8wy",
+        "outputId": "03f62bd2-73ce-4ce7-d5e0-5145d4d1b807"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 6\n",
+            "O número 6 é um múltiplo de 3.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#(EX. 02)\n",
+        "#>Dadas as notas a e b de um aluno, com pesos respectivamente 2 e 3; pede-se elaborar um programa em Python para calcular e exibir a média ponderada do aluno, verificar e informar, junto ao valor da sua média, se foi aprovado ou não\n",
+        "##>>(OBS: Considere aprovado se obtiver média igual ou superior a 5)\n",
+        "\n",
+        "# Solicita ao usuário que insira a notas \"A\" e \"B\" de um aluno\n",
+        "A = int(input(\"Digite a nota A: \"))\n",
+        "B = int(input(\"Digite a nota B: \"))\n",
+        "\n",
+        "# Calcule a média ponderada e considere a nota \"A\" com peso 2 e a nota \"B\" com peso 3\n",
+        "media_ponderada = (A * 2 + B * 3) / 5\n",
+        "\n",
+        "# Considere Aprovado se obtiver a média igual ou superior a 5\n",
+        "if media_ponderada >= 5:\n",
+        "    print(f\"O aluno foi aprovado com média {media_ponderada:.2f}.\")\n",
+        "else:\n",
+        "    print(f\"O aluno foi reprovado com média {media_ponderada:.2f}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TSo8ljxrmobZ",
+        "outputId": "40c5f567-d425-42a5-bd2e-9fce507d1d84"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a nota A: 10\n",
+            "Digite a nota B: 7\n",
+            "O aluno foi aprovado com média 8.20.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#(EX. 03)\n",
+        "#>Dado o algoritmo a seguir, elabore o código python do programa em questão:\n",
+        "##>>Início\n",
+        "##>>Leia os três valores: a, b e c.\n",
+        "##>>Compare os valores:\n",
+        "##>>Se a é menor ou igual a b e a é menor ou igual a c, então\n",
+        "##>>a é o menor valor.\n",
+        "##>>Caso contrário, se b é menor ou igual a a e b é menor ou igual a c, então\n",
+        "##>>b é o menor valor.\n",
+        "##>>Caso contrário,\n",
+        "##>>c é o menor valor.\n",
+        "##>>Exiba o menor valor.\n",
+        "##>>Fim\n",
+        "\n",
+        "# Leia os valores de \"A\", \"B\" e \"C\"\n",
+        "A = int(input(\"Digite o valor de A: \"))\n",
+        "B = int(input(\"Digite o valor de B: \"))\n",
+        "C = int(input(\"Digite o valor de C: \"))\n",
+        "\n",
+        "# Compare os valores se \"A\" é menor ou igual a \"B\" e \"A\" é menor ou igual a \"C\", então \"B\" é o menor Valor. Caso contrário, \"C\" é o menir Valor. Exiba o menor valor\n",
+        "if A <= B and A <= C:\n",
+        "    print(f\"O menor valor é {A}.\")\n",
+        "elif B <= A and B <= C:\n",
+        "    print(f\"O menor valor é {B}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "COfW3m4soV9f",
+        "outputId": "083fe063-f630-4228-8cec-367445493428"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor de A: 3\n",
+            "Digite o valor de B: 4\n",
+            "Digite o valor de C: 5\n",
+            "O menor valor é 3.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n"
+      ],
+      "metadata": {
+        "id": "0HHJlyyZq6J1"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
